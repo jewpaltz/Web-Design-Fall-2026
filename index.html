@@ -4,13 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Gallery</title>
+    
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+
+    <style>
+        /*
+        element.class#id:pseudo-class::pseudo-element {
+            /* Add your styles here 
+        }
+        */
+
+        .header {
+            background-color: #efdede;
+            padding: 20px;
+            text-align: center;
+            font-size: 48px;
+        }
+        
+        .main-list {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main-list li {
+            flex: 1 1 30%;
+            list-style-type: none;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f0d4d4;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(245, 85, 85, 0.1);
+            border: 1px solid #f14040;
+        }
+
+        .main-list li a {
+            text-decoration: none;
+        }
+
+    </style>
 </head>
 <body>
     <div id="main">
         <section class="header">
-
+            <h1>Project Gallery</h1>
         </section>
-        <section class="content">
+        <section class="content container">
             <ul class="main-list">
                 <li>
                     <a href="suny_website/">My SUNY New Paltz Site</a>
