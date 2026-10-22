@@ -38,18 +38,29 @@
             background-color: #f0d4d4;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(245, 85, 85, 0.1);
-            border: 1px solid #f14040;
+            border: 1px solid #ff4040;
         }
 
         .main-list li a {
             text-decoration: none;
         }
 
+        li.highlighted {
+            background-color: #00800080;
+            border: 1px solid lime;
+            color: green;
+        }
+
+        #back-to-top {
+            display: block;
+            margin-bottom: 150px;
+        }
+
     </style>
 </head>
 <body>
     <div id="main">
-        <section class="header">
+        <section class="header" id="top">
             <h1>Project Gallery</h1>
         </section>
         <section class="content container">
@@ -57,12 +68,44 @@
                 <li>
                     <a href="suny_website/">My SUNY New Paltz Site</a>
                 </li>
-                <li></li>
-                <li></li>
+                <li>
+                    <a href="#div7">Important stuff at the end of the page</a>
+                </li>
+                <li class="highlighted">Special Text</li>
                 <li></li>
                 <li></li>
             </ul>
+
+            <img src="suny_website/images/fall-open-house.webp" 
+                 alt="SUNY New Paltz Fall Open House" 
+                 width="600"
+                 >
         </section>
+        <br><br>
+        <div>
+            <h2>Div 2</h2>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div>
+            <h2>Div 3</h2>
+        </div>
+                <br><br><br><br><br><br><br><br>
+        <div>
+            <h2>Div 4</h2>
+        </div>
+                <br><br><br><br><br><br><br><br>
+        <div>
+            <h2>Div 5</h2>
+        </div>
+                <br><br><br><br><br><br><br><br>
+        <div>
+            <h2>Div 6</h2>
+        </div>
+                <br><br><br><br><br><br><br><br>
+        <div id="div7">
+            <h2>Div 7</h2>
+        </div>
     </div>
+    <a id="back-to-top" href="#top">Back to top</a>
 </body>
 </html>
