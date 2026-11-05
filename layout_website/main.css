@@ -1,0 +1,20 @@
+/* B"H
+*/
+
+.special-paragraph {
+    padding: 2rem;
+    background-color: #c2e4ba;
+}
+
+.highlighted {
+    width: 50%;
+    background-color: #e4baba;
+}
+
+.more span{
+    display: none;
+}
+
+.more:hover span{
+    display: block;
+}
