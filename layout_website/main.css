@@ -1,6 +1,22 @@
 /* B"H
 */
 
+nav {
+    background-color: #6de6ac;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #000;
+}
+
 .special-paragraph {
     padding: 2rem;
     background-color: #c2e4ba;
@@ -11,10 +27,59 @@
     background-color: #e4baba;
 }
 
-.more span{
+.more {
+    position: relative;
+}
+
+.more .more-text {
     display: none;
 }
 
-.more:hover span{
+.more:focus-within .more-text {
     display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    background-color: #e6d86d;
+    border: 2px solid #000;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.diagram {
+    border: 2px solid #000;
+    padding: 1rem;
+    margin: 1rem;
+
+    background-color: #6dd8e6;
+
+    float: left;
+    width: 30%;
+}
+
+.floating {
+    position: absolute;
+    top: 290px;
+    left: 20px;
+
+    width: 100px;
+    background-color: #e6d86d;
+    border: 2px solid #000;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 95%;
+    background-color: #e6d86d;
+    border: 2px solid #000;
+    padding: .5rem;
+    margin: .5rem;
+
+    z-index: 1000;
 }
