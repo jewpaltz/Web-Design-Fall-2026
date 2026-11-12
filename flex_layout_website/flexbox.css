@@ -2,10 +2,22 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: -.5em auto;
+    width: 1080px;
+}
+
 header, main, footer {
     background-color: #c7d7e7;
     padding: .5em;
     margin: .5em;
+}
+
+main {
+    flex: 1;
 }
 
 nav ul {
@@ -50,7 +62,16 @@ nav a {
     flex-grow: 1;
 }
 
+@media (max-width: 1080px) {
+    .container {
+        width: 600px;
+    }
+}
+
 @media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
     nav ul, .columns {
         flex-direction: column;
     }
