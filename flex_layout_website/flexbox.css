@@ -1,0 +1,51 @@
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+header, main, footer {
+    background-color: #c7d7e7;
+    padding: .5em;
+    margin: .5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: -.5em .5em;
+    display: flex;
+    gap: 1px;
+}
+
+nav li {
+    flex: 1;
+    padding: .5em;
+    background-color: #a6c6e6;
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: #e7f0f7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: .5em;
+}
+
+
+
+.columns {
+    display: flex;
+    gap: .5em;
+    min-height: 200px;
+}
+
+.column {
+    background-color: #e7f0f7;
+    padding: .5em;
+}
+
+.expand {
+    flex-grow: 1;
+}
