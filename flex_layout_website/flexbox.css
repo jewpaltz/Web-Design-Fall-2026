@@ -49,3 +49,9 @@ nav a {
 .expand {
     flex-grow: 1;
 }
+
+@media (max-width: 600px) {
+    nav ul, .columns {
+        flex-direction: column;
+    }
+}
